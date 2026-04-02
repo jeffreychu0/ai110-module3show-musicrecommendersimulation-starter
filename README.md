@@ -29,6 +29,13 @@ Some prompts to answer:
 
 You can include a simple diagram or bullet list if helpful.
 
+There is a lot of information that I learned regarding the way recommendation systems are ran. There are three stages that pipelines use to make recommendations, you pull candidates, rank them, and rerank with constraints. Spotify and Youtube both mix user related signals, suuch as listening patterns, skip rate, watch time, etc, along with general content signals such as relevance, audio proerties, etc. They use both collaborative and content based filtering. For my approach, since there is not a lot of collaborative filtering data that I could use (related to listening patterns), I will stick to content based patterns. I plan to use the specific information about each song, such as its genre, bpm, among many other things and recommend similar songs based on these criteria. 
+
+Pictured below are some data points related to each of the criterion, included how they are ranked and the score criterion that I created with the help of AI.
+
+![alt text](TiersOfData.png)
+
+![alt text](scoreCriterion.png)
 ---
 
 ## Getting Started
