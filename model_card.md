@@ -3,7 +3,7 @@
 ## 1. Model Name  
 
 Give your model a short, descriptive name.  
-Example: **VibeFinder 1.0**  
+MusicMatch   
 
 ---
 
@@ -17,6 +17,8 @@ Prompts:
 - What assumptions does it make about the user  
 - Is this for real users or classroom exploration  
 
+- The model matches music to different user preferences
+- Matches based on genre, energy, etc
 ---
 
 ## 3. How the Model Works  
@@ -32,6 +34,7 @@ Prompts:
 
 Avoid code here. Pretend you are explaining the idea to a friend who does not program.
 
+Weighted based on genres (3), energy (2), mood (2), and acoustics (1). Higher priority on genres
 ---
 
 ## 4. Data  
@@ -45,6 +48,10 @@ Prompts:
 - Did you add or remove data  
 - Are there parts of musical taste missing in the dataset  
 
+- 18 songs in the catalog
+- Genres include: pop, lofi, rock, intense, ambient, jazz, synthwave, etc
+- Data was added based on real songs
+- Small dataset: likely missing data
 ---
 
 ## 5. Strengths  
@@ -57,6 +64,9 @@ Prompts:
 - Any patterns you think your scoring captures correctly  
 - Cases where the recommendations matched your intuition  
 
+- Simple and fast recommendations
+- Matching similar genres with profiles
+- Correctly determines good recommendations for songs
 ---
 
 ## 6. Limitations and Bias 
@@ -70,6 +80,7 @@ Prompts:
 - Cases where the system overfits to one preference  
 - Ways the scoring might unintentionally favor some users  
 
+The system over prioritizes genre because of its higher weight. It is using the settings that were specifically mentioned in the csv and is relying on that specific data. It is only comparing recommendations based on 4 factors and can only recommend the specific songs in the dataset.
 ---
 
 ## 7. Evaluation  
@@ -85,6 +96,11 @@ Prompts:
 
 No need for numeric metrics unless you created some.
 
+- Pop fan was suggested pop genre preferences
+- lofi acoustic lover was given low energy songs
+- metal rock fan suggested intense metal songs
+- peaceful minimalist given classical peaceful prefernces
+- Dark energetic fan suggested synth pulse music
 ---
 
 ## 8. Future Work  
@@ -98,6 +114,9 @@ Prompts:
 - Improving diversity among the top results  
 - Handling more complex user tastes  
 
+- Add more data to the dataset
+- Create higher criteria recommendations
+- handle generic prompts or matched taste based on songs users listen to
 ---
 
 ## 9. Personal Reflection  
@@ -109,3 +128,7 @@ Prompts:
 - What you learned about recommender systems  
 - Something unexpected or interesting you discovered  
 - How this changed the way you think about music recommendation apps  
+
+- recommender systems aren't too complicated to create
+- Surprised on the different ways recommendation systems are made
+- makes me respect good algorithmic recommendations

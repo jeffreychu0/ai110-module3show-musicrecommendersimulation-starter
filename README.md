@@ -57,7 +57,11 @@ Algorithm Recipe:
 The system will bias genre matches over all other similaries since the weight is so high
 
 Example Output
-![output](image.png)
+![output](output.png)
+
+Example with test cases
+![test cases](testcases.png)
+
 
 ## Getting Started
 

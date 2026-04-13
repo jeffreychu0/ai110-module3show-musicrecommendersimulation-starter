@@ -79,7 +79,7 @@ def score_song(user_prefs: Dict, song: Dict) -> float:
 
     # Genre match: +3 points
     if song['genre'].lower() == user_prefs['genre'].lower():
-        score += 3
+        score += 2
 
     # Mood match: +2 points
     if song['mood'].lower() == user_prefs['mood'].lower():
